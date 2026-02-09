@@ -2,12 +2,13 @@
 /**
  * PrivateBin
  *
- * a zero-knowledge paste bin
+ * A zero-knowledge paste bin
  *
- * @link      https://github.com/PrivateBin/PrivateBin
  * @copyright 2012 Sébastien SAUVAGE (sebsauvage.net)
  * @license   https://www.opensource.org/licenses/zlib-license.php The zlib/libpng License
  * @version   1.5.1
+ * @link      https://github.com/PrivateBin/PrivateBin
+ * 
  */
 
 namespace PrivateBin;
@@ -22,9 +23,9 @@ use Exception;
 class Filter
 {
     /**
-     * format a given time string into a human readable label (localized)
+     * Format a given time string into a human readable label (localized)
      *
-     * accepts times in the format "[integer][time unit]"
+     * Accepts times in the format "[integer][time unit]"
      *
      * @access public
      * @static
@@ -38,20 +39,20 @@ class Filter
             throw new Exception("Error parsing time format '$time'", 30);
         }
         switch ($matches[2]) {
-            case 'sec':
+        case 'sec':
                 $unit = 'second';
                 break;
-            case 'min':
+        case 'min':
                 $unit = 'minute';
                 break;
-            default:
+        default:
                 $unit = rtrim($matches[2], 's');
         }
         return I18n::_(array('%d ' . $unit, '%d ' . $unit . 's'), (int) $matches[1]);
     }
 
     /**
-     * format a given number of bytes in IEC 80000-13:2008 notation (localized)
+     * Format a given number of bytes in IEC 80000-13:2008 notation (localized)
      *
      * @access public
      * @static
@@ -66,6 +67,6 @@ class Filter
             $size = $size / 1024;
             ++$i;
         }
-        return number_format($size, ($i ? 2 : 0), '.', ' ') . ' ' . I18n::_($iec[$i]);
+        return number_format($size, ($i ? 2 : 0), '.', ' ').' '.I18n::_($iec[$i]);
     }
 }
