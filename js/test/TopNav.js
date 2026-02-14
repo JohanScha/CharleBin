@@ -288,7 +288,7 @@ describe('TopNav', function () {
                     'data-target="#navbar" aria-expanded="false" aria-controls' +
                     '="navbar">Toggle navigation</button><a class="reloadlink ' +
                     'navbar-brand" href=""><img alt="PrivateBin" ' +
-                    'src="img/icon.svg" width="38" /></a></div><div ' +
+                    'src="img/icon.png" width="38" /></a></div><div ' +
                     'id="navbar"><ul><li><button id="newbutton" type=' +
                     '"button" class="hidden">New</button></li></ul></div></nav>'
                 );
