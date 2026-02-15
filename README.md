@@ -316,7 +316,7 @@ Mes manipulations :
 5. Explorer plusieurs suggestions de Copilot avec `Ctrl + Enter`
 6. Comparer les propositions (lisibilité, cas limites, cohérence avec le code existant) et critiquer le résultat retenu 
 
-Critique:
+**Critique:**
 Copilot propose vite une solution qui fonctionne et qui est facile à lire, ce qui fait gagner du temps
 Mais il ne pense pas toujours aux cas particuliers ou à la cohérence avec le reste du code
 Il faut donc relire et adapter la solution avant de l’utiliser
@@ -427,8 +427,6 @@ describe("CharleBin", () => {
 });
 ```
 
-Voici une version plus courte, plus naturelle et centrée sur **je** 👇
-
 ---
 
 ## Tests unitaires – SAE NetVOD
@@ -459,9 +457,6 @@ La commande pour lancer les tests est :
 ```
 
 Je fournis dans le rendu les deux fichiers de test présents dans le dossier `tests/`.
-
----
-Voici une version plus naturelle, plus simple et qui sonne davantage comme un vrai retour d’étudiant 👇
 
 ---
 
