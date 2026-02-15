@@ -237,8 +237,6 @@ Mes manipulations :
  3. Recréer la PR de l'exercice 3 en prenant en compte ces nouvelles règles
  
 
--------------------------------------------------------- A vérif -------------------------------------------------
-
 ## Partie 3 - Linters
 
 ### Slide 8 -- #1 - Installation et configuration des linters
