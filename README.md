@@ -454,6 +454,19 @@ La commande pour lancer les tests est :
 
 ```
 
+Cependant pour que les tests soient fonctionnels j'ai du ajouter dans le Repository.php la méthode de chargement du fichier de conf pour supporté le driver de sqlite
+
+```js
+if ($cfg['driver'] === 'sqlite') {
+            self::$config = [
+                'dsn' => "sqlite:{$cfg['database']}",
+                'user' => null,
+                'pass' => null
+            ];
+            return;
+        }
+```
+
 Je fournis dans le rendu les deux fichiers de test présents dans le dossier `tests/`.
 
 ---
